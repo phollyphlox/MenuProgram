@@ -13,6 +13,9 @@
 		2EF885B91AE70826003AA890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF885B81AE70826003AA890 /* Images.xcassets */; };
 		2EF885BC1AE70826003AA890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF885BA1AE70826003AA890 /* LaunchScreen.xib */; };
 		2EF885C81AE70826003AA890 /* MenuProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF885C71AE70826003AA890 /* MenuProgramTests.swift */; };
+		2EF885D21AE70916003AA890 /* MathImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF885D11AE70916003AA890 /* MathImage.jpg */; };
+		2EFB42891AE81EC5000D6AD2 /* ProblemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB42871AE81EC5000D6AD2 /* ProblemVC.swift */; };
+		2EFB428A1AE81EC5000D6AD2 /* ProblemVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB42881AE81EC5000D6AD2 /* ProblemVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2EF885C11AE70826003AA890 /* MenuProgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuProgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF885C61AE70826003AA890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF885C71AE70826003AA890 /* MenuProgramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProgramTests.swift; sourceTree = "<group>"; };
+		2EF885D11AE70916003AA890 /* MathImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MathImage.jpg; sourceTree = "<group>"; };
+		2EFB42871AE81EC5000D6AD2 /* ProblemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemVC.swift; sourceTree = "<group>"; };
+		2EFB42881AE81EC5000D6AD2 /* ProblemVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProblemVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				2EF885B11AE70826003AA890 /* AppDelegate.swift */,
 				2EF885B31AE70826003AA890 /* ViewController.swift */,
 				2EF885B51AE70826003AA890 /* Main.storyboard */,
+				2EFB42871AE81EC5000D6AD2 /* ProblemVC.swift */,
+				2EFB42881AE81EC5000D6AD2 /* ProblemVC.xib */,
+				2EF885D11AE70916003AA890 /* MathImage.jpg */,
 				2EF885B81AE70826003AA890 /* Images.xcassets */,
 				2EF885BA1AE70826003AA890 /* LaunchScreen.xib */,
 				2EF885AF1AE70826003AA890 /* Supporting Files */,
@@ -156,14 +165,16 @@
 		2EF885A41AE70826003AA890 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Phyllis Hollingshead";
 				TargetAttributes = {
 					2EF885AB1AE70826003AA890 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0820;
 					};
 					2EF885C01AE70826003AA890 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = 2EF885AB1AE70826003AA890;
 					};
 				};
@@ -193,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF885B71AE70826003AA890 /* Main.storyboard in Resources */,
+				2EFB428A1AE81EC5000D6AD2 /* ProblemVC.xib in Resources */,
+				2EF885D21AE70916003AA890 /* MathImage.jpg in Resources */,
 				2EF885BC1AE70826003AA890 /* LaunchScreen.xib in Resources */,
 				2EF885B91AE70826003AA890 /* Images.xcassets in Resources */,
 			);
@@ -212,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFB42891AE81EC5000D6AD2 /* ProblemVC.swift in Sources */,
 				2EF885B41AE70826003AA890 /* ViewController.swift in Sources */,
 				2EF885B21AE70826003AA890 /* AppDelegate.swift in Sources */,
 			);
@@ -268,15 +282,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -310,8 +328,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -319,6 +339,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -328,6 +349,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -338,7 +360,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MenuProgram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PhollyPhlox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -348,7 +372,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MenuProgram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PhollyPhlox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -366,7 +392,9 @@
 				);
 				INFOPLIST_FILE = MenuProgramTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PhollyPhlox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuProgram.app/MenuProgram";
 			};
 			name = Debug;
@@ -381,7 +409,9 @@
 				);
 				INFOPLIST_FILE = MenuProgramTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PhollyPhlox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuProgram.app/MenuProgram";
 			};
 			name = Release;
@@ -405,6 +435,7 @@
 				2EF885CD1AE70826003AA890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EF885CE1AE70826003AA890 /* Build configuration list for PBXNativeTarget "MenuProgramTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +444,7 @@
 				2EF885D01AE70826003AA890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
