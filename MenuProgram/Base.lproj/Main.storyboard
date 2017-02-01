@@ -180,6 +180,7 @@
                     <connections>
                         <outlet property="lblAnswer" destination="Yxk-tq-C4v" id="Gz6-Ig-YmC"/>
                         <outlet property="lblCorrect" destination="Zhg-Nj-Thp" id="Ic9-Hm-SuR"/>
+                        <outlet property="lblDivisonMessage" destination="IUc-he-MU9" id="bzz-NE-5um"/>
                         <outlet property="lblNum1" destination="JRA-XD-OVI" id="7hn-x4-phF"/>
                         <outlet property="lblResults" destination="Y49-xx-Bsd" id="XFA-uZ-sZn"/>
                         <outlet property="lblWrong" destination="cAz-Wl-bgH" id="gyX-2R-Oky"/>

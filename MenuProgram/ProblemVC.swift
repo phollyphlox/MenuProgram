@@ -15,14 +15,17 @@ class ProblemVC: UIViewController {
     @IBOutlet weak var lblCorrect: UILabel!
     @IBOutlet weak var lblWrong: UILabel!
     
+    @IBOutlet weak var lblDivisonMessage: UILabel!
     var num1:UInt32 = 0
     var num2:UInt32 = 0
     var newSign: String = "+"
     var correct = 0
     var wrong = 0
+
     
     @IBAction func btnGetNew(_ sender: UIButton) {
         
+        lblDivisonMessage.isHidden = true
         lblAnswer.text = ""
         num1 = arc4random() % 101
         num2 = arc4random() % 101
@@ -54,6 +57,7 @@ class ProblemVC: UIViewController {
         else
         {
             newSign = "/"
+            lblDivisonMessage.isHidden = false
             if num1 < num2 {
                 let temp = num1
                 num1 = num2
